@@ -1,2 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+message_one:
+  user_token: alexp
+  user_name: profeit
+  body: 'Yo'
+
+message_two:
+  user_token: leesr
+  user_name: lees
+  body: 'hello'

@@ -9,6 +9,12 @@ class MessagesController < ApplicationController
     end
   end
 
+  def index
+    @messages = Message.all
+
+    render json: { messages: @messages.to_a.to_json }
+  end
+
   private
 
   def message_params

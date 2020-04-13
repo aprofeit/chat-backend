@@ -2,5 +2,5 @@ REDIRECT_ROOT = Rails.env.development? ? "http:localhost:3001" :  "https://chat.
 Rails.application.routes.draw do
   root to: redirect("https://chat.profeit.com")
 
-  resources :messages, only: [:create]
+  resources :messages, only: [:index, :create]
 end
